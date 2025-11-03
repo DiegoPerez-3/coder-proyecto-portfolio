@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link de Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link de css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Título Tab -->
+    <title> Proyectos - Diego </title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="sidebar d-none d-lg-block">
+        <nav>
+            <ul class="d-flex flex-column lista-links">
+                <li>
+                    <a href="../index.html"> <i class="bi bi-house"></i> <span> Inicio </span> </a>
+                </li>
+                <li>
+                    <a href="#proyectos"> <i class="bi bi-images"></i> <span> Proyectos </span> </a>
+                </li>
+                <li>
+                    <a href="contacto.html"> <i class="bi bi-envelope"></i> <span> Contacto </span> </a>
+                </li>
+            </ul>
+
+            <ul class="d-flex flex-row lista-redes">
+                <li>
+                    <a href="https://www.instagram.com"> <i class="bi bi-instagram"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com"> <i class="bi bi-linkedin"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/"> <i class="bi bi-github"></i> </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navbar con Bootstrap para celular y tablet -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-lg-none" style="background-color: #1B1B1B;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos"> Proyectos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"> Contacto </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="pag-2">
+        <!-- Main utilizando Bootstrap-->
+        <main id="proyectos">
+            <!-- Título -->
+            <h1 class="text-center py-5"> Portfolio </h1>
+
+            <!-- Proyecto-1 -->
+            <div class="container py-3 rounded-5 mb-3" style="background-color: #2A2A2A;">
+                <div class="row align-items-center">
+            
+                    <!-- Carousel -->
+                    <div class="col-md-4">
+                        <div id="carousel-proyecto-1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded-5" style="max-height: 400px; overflow:hidden;">
+                                <div class="carousel-item active">
+                                    <img src="../img/ejemplo-proyecto-1.jpg" class="d-block w-100 img-fluid" alt="Ejemplo de un proyecto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ejemplo-proyecto-2.jpg" class="d-block w-100 img-fluid" alt="Ejemplo de un proyecto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ejemplo-proyecto-3.jpg" class="d-block w-100 img-fluid" alt="Ejemplo de un proyecto">
+                                </div>
+                            </div>
+                            <button class="carousel-control-next bg-dark rounded-5" type="button" data-bs-target="#carousel-proyecto-1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Texto --> 
+                    <div class="col-md-8">
+                        <h2 class="mb-4 text-center fs-3"> Ejemplo Proyecto 1 </h2>
+                        <p class="fs-6 mb-3" style="color: #bebebe;">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi exercitationem dolorum iure saepe. Quod optio ab totam magnam pariatur quo accusamus. Velit, fugit doloribus. Eaque, rerum maxime? Cumque, expedita?
+                        </p>
+                        <p class="fs-6 mb-3" style="color: #bebebe;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores rem provident consequuntur in doloremque nulla, eum vel et culpa iure eaque. Consectetur error quam autem consequatur dolorum. Fugiat, ipsum?
+                        </p>
+                        <p class="fs-6 mb-3" style="color: #bebebe;">
+                            Proin ac ligula vel sapien commodo malesuada. Cras sit amet fermentum lacus, ac malesuada orci.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto-2 (Actualmente idéntico al Proyecto 1)-->
+            <div class="container py-3 rounded-5 mb-3" style="background-color: #2A2A2A;">
+                <div class="row align-items-center">
+            
+                    <!-- Carrousel -->
+                    <div class="col-md-4">
+                        <div id="carousel-proyecto-2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded-5" style="max-height: 400px; overflow:hidden;">
+                                <div class="carousel-item active">
+                                    <img src="../img/ejemplo-proyecto-1.jpg" class="d-block w-100 img-fluid" alt="Ejemplo de un proyecto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ejemplo-proyecto-2.jpg" class="d-block w-100 img-fluid" alt="Ejemplo de un proyecto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ejemplo-proyecto-3.jpg" class="d-block w-100 img-fluid" alt="Ejemplo de un proyecto">
+                                </div>
+                            </div>
+                            <button class="carousel-control-next bg-dark rounded-5" type="button" data-bs-target="#carousel-proyecto-2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Texto --> 
+                    <div class="col-md-8">
+                        <h2 class="mb-4 text-center fs-3"> Ejemplo Proyecto 2 </h2>
+                        <p class="fs-6 mb-3" style="color: #bebebe;">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi exercitationem dolorum iure saepe. Quod optio ab totam magnam pariatur quo accusamus. Velit, fugit doloribus. Eaque, rerum maxime? Cumque, expedita?
+                        </p>
+                        <p class="fs-6 mb-3" style="color: #bebebe;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores rem provident consequuntur in doloremque nulla, eum vel et culpa iure eaque. Consectetur error quam autem consequatur dolorum. Fugiat, ipsum?
+                        </p>
+                        <p class="fs-6 mb-3" style="color: #bebebe;">
+                            Proin ac ligula vel sapien commodo malesuada. Cras sit amet fermentum lacus, ac malesuada orci.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 - Desarrollado por <span> Diego Pérez </span></p>
+        </footer>
+    </div>
+
+    <!-- Link de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
