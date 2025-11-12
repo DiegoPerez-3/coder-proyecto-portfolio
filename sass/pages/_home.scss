@@ -1,0 +1,217 @@
+/* -------------------------------------- Estilos Index -------------------------------------- */
+
+/* ------------- Estilos Main -------------*/
+
+.pag{
+    // Disposición contenedores
+    .index-main{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        // Textos
+        .texto{
+            max-width: 450px;
+            h1{
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            h2{
+                margin-bottom: 40px;
+                span{
+                    font-weight: 100;
+                }
+            }
+            p{
+                line-height: 25px;
+            }
+            // Botones Main
+            .contenedor-botones{
+                padding-top: 30px;
+                a{
+                    border-radius: 50px;
+                    padding: 0.8rem 1.5rem;
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+                // Botón Uno
+                .boton-uno{
+                    background-color: whitesmoke;
+                    color: #1F1F1F;
+                }
+                // Botón Dos
+                .boton-dos{
+                    border: 2px solid whitesmoke;
+                    color: whitesmoke;
+                    &:hover{
+                        background-color: whitesmoke;
+                        color: #1B1B1B;
+                    }
+                }
+            }
+            // Botones Redes Main
+            .contenedor-botones-redes{
+                display: flex;
+                gap: 10px;
+                padding-top: 20px;
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        i{
+                            background-color: whitesmoke;
+                            color: #1B1B1B;
+                        }
+                    }
+                    i{
+                        background-color: #323232;
+                        color: whitesmoke;
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        // Profile Pic
+        .imagen{
+            display: flex;
+            justify-content: center;
+            img{
+                max-width: 450px;
+                border-radius: 50px;
+                box-shadow: 30px 30px 3px #343434;
+            }
+        }
+    }
+}
+
+/* ------------- Estilos Section Sobre Mí -------------*/
+
+.wave-1{
+    transform: translateY(5px);
+}
+
+.pag{
+    .index-sobre-mi{
+        background-color: #343434;
+        // Título de Sección
+        h3{
+            text-align: center;
+            font-weight: bold;
+            &::before{
+                content: "────";
+                margin: 0 1rem 0 1rem;
+            }
+            &::after{
+                content: "────";
+                margin: 0 1rem 0 1rem;
+            }
+        }
+        // Disposición Contenedores
+        .contenido{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 50px 0 50px 0;
+            // Contenedor Izquierda (Texto)
+            .texto{
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+                h4{
+                    margin-bottom: 50px;
+                }
+            }
+            // Contenedor Derecha (Tarjetas)
+            .info{
+                // Tarjetas
+                .tarjeta{
+                    background-color: #1F1F1F;
+                    width: 10rem;
+                    height: 10rem;
+                    padding: 1rem;
+                    border-radius: 50px;
+                    text-align: center;
+                    i{
+                        font-size: 2rem;
+                    }
+                    p{
+                        color: #888F8F;
+                    }
+                }
+                // Datos
+                .dato{
+                    p{
+                        color: #888F8F;
+                        margin: 1rem 0 0 0;
+                    }
+                    h4{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+                // Grid-Area Tarjetas y Datos
+                width: 400px;
+                display: grid;
+                gap: 1rem;
+                grid-template-areas: 
+                "area-1 area-2"
+                "area-3 area-4"
+                "area-5 area-6"
+                "area-7 area-8";
+                .area-1{
+                    grid-area: area-1;
+                }
+                .area-2{
+                    grid-area: area-2;
+                }
+                .area-3{
+                    grid-area: area-3;
+                }
+                .area-4{
+                    grid-area: area-4;
+                }
+                .area-5{
+                    grid-area: area-5;
+                }
+                .area-6{
+                    grid-area: area-6;
+                }
+                .area-7{
+                    grid-area: area-7;
+                }
+                .area-8{
+                    grid-area: area-8;
+                }
+            }
+        }
+    }
+}
+
+/* ------------- Estilos Section Habilidades -------------*/
+
+.pag{
+    .index-habilidades{
+        // Título de Sección
+        h3{
+            text-align: center;
+            font-weight: bold;
+            padding-top: 50px;
+            &::before{
+                content: "────";
+                margin: 0 1rem 0 1rem;
+            }
+            &::after{
+                content: "────";
+                margin: 0 1rem 0 1rem;
+            }
+        }
+    }
+}

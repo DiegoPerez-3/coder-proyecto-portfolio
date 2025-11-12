@@ -1,0 +1,37 @@
+/* -------------------------------------- Media Queries Mobile -------------------------------------- */
+
+@media screen and (max-width: 768px){
+    .pag{
+        //Main
+        .index-main{
+            height: auto;
+            .texto{
+                padding: 50px 20px 0 20px
+            }
+            .imagen{
+                padding-bottom: 100px;
+                img{
+                    max-width: 400px;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        // Sobre Mí
+        .index-sobre-mi{
+            .contenido{
+                .info{
+                    justify-content: center;
+                    .dato{
+                        text-align: center;
+                    }
+                }
+                .texto{
+                    p{
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}

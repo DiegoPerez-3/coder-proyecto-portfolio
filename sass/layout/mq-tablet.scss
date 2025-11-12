@@ -1,0 +1,42 @@
+/* -------------------------------------- Media Queries Tablet -------------------------------------- */
+
+@media screen and (max-width: 1024px){
+    .pag,
+    .pag-2,
+    .pag-3{
+        // Elimino el espaciado por la sidebar
+        padding-left: 0;
+    }
+    .pag{
+        .index-main{
+            //Disposición Contenedores
+            flex-direction: column;
+            //Main
+            .texto{
+                text-align: center;
+                .contenedor-botones{
+                    justify-content: center;
+                }
+                .contenedor-botones-redes{
+                    justify-content: center;
+                }
+            }
+        }
+        .index-sobre-mi{
+            .contenido{
+                //Disposición Contenedores
+                flex-direction: column;
+                // Sobre Mí
+                .texto{
+                    text-align: center;
+                }
+                .info{
+                    justify-content: center;
+                    .dato{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,445 @@
+/* -------------------------------------- Reset -------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------- Estilos Generales -------------------------------------- */
+
+body{
+    color: whitesmoke;
+    background-color: #1F1F1F;
+}
+
+.pag,
+.pag-2,
+.pag-3{
+    padding-left: 70px;
+}
+
+/* -------------------------------------- Estilos Navbar -------------------------------------- */
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 70px;
+    background-color: #1B1B1B;
+    transition: width 0.3s;
+    z-index: 1000;
+}
+
+/* Separar listas links y redes */
+.sidebar nav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Expansión navbar con el mouse */
+.sidebar:hover{
+    width: 160px;
+}
+
+/* Links */
+.sidebar nav .lista-links,
+.sidebar nav .lista-redes{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav .lista-links li a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav .lista-links li a:hover{
+background-color:#323232;
+}
+
+/* Íconos */
+.sidebar nav .lista-links li a i{
+    margin: 20px 10px 20px 25px;
+    font-size: 1.2rem;
+}
+
+/* Mostrar texto cuando se expande */
+.sidebar nav .lista-links li a span{
+    opacity: 0;
+    transition: opacity 0.1s;
+    white-space: nowrap;
+}
+
+.sidebar:hover nav .lista-links li a span{
+    opacity: 1;
+    transition: opacity 0.3s;
+    transition-delay: 0.1s;
+}
+
+/* Redes */
+.sidebar nav .lista-redes{
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.sidebar nav .lista-redes li a{
+    text-decoration: none;
+}
+
+.sidebar nav .lista-redes li a i{
+    background-color: #323232;
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.sidebar nav .lista-redes li a:hover i{
+    background-color: whitesmoke;
+    color: #1B1B1B;
+}
+
+/* Mostrar lista cuando se expande */
+.sidebar:hover nav .lista-redes li a i{
+    opacity: 1;
+    transition: opacity 0.3s;
+    transition-delay: 0.1s;
+}
+
+/* -------------------------------------- Estilos Footer -------------------------------------- */
+
+footer{
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 1px solid #363636;
+    margin: 0 10%;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer p span{
+    font-weight: bold;
+}
+
+/* -------------------------------------- Estilos Index -------------------------------------- */
+
+/* ------------- Estilos Main -------------*/
+
+/* Disposición contenedores */
+.pag .index-main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Textos */
+.pag .index-main .texto{
+    max-width: 450px;
+}
+
+.pag .index-main .texto h1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pag .index-main .texto h2 span{
+    font-weight: 100;
+}
+
+.pag .index-main .texto h2{
+    margin-bottom: 40px;
+}
+
+.pag .index-main .texto p{
+    line-height: 25px;
+}
+
+/* Botones Main */
+.pag .index-main .texto .contenedor-botones{
+    padding-top: 30px;
+}
+
+.pag .index-main .texto .contenedor-botones a{
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* Botón uno */
+.pag .index-main .texto .contenedor-botones .boton-uno{
+    background-color: whitesmoke;
+    color: #1F1F1F;
+}
+
+/* Botón dos */
+.pag .index-main .texto .contenedor-botones .boton-dos{
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.pag .index-main .texto .contenedor-botones .boton-dos:hover{
+    background-color: whitesmoke;
+    color: #1B1B1B;
+}
+
+/* Botones Redes Main */
+.pag .index-main .texto .contenedor-botones-redes{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.pag .index-main .texto .contenedor-botones-redes a{
+    text-decoration: none;
+}
+
+.pag .index-main .texto .contenedor-botones-redes a i{
+    background-color: #323232;
+    color: whitesmoke;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.pag .index-main .texto .contenedor-botones-redes a:hover i{
+    background-color: whitesmoke;
+    color: #1B1B1B;
+}
+
+/* Profile Pic */
+.pag .index-main .imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.pag .index-main .imagen img{
+    max-width: 450px;
+    border-radius: 50px;
+    box-shadow: 30px 30px 3px #343434;
+}
+
+/* ------------- Estilos Section Sobre Mí -------------*/
+
+.wave-1{
+    transform: translateY(5px);
+}
+
+.pag .index-sobre-mi{
+    background-color: #343434;
+}
+
+/* Disposición contenedores */
+.pag .index-sobre-mi .contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0 50px 0;
+}
+
+/* Título de sección */
+.pag .index-sobre-mi h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.pag .index-sobre-mi h3::before,
+.pag .index-sobre-mi h3::after{
+    content: "────";
+    margin: 0 1rem 0 1rem;
+}
+
+/* Contenedor Izquierda (Texto) */
+.pag .index-sobre-mi .contenido .texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.pag .index-sobre-mi .contenido .texto h4{
+    margin-bottom: 50px;
+}
+
+/* Tarjetas */
+.pag .index-sobre-mi .contenido .info .tarjeta{
+    background-color: #1F1F1F;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.pag .index-sobre-mi .contenido .info .tarjeta i{
+    font-size: 2rem;
+}
+
+.pag .index-sobre-mi .contenido .info .tarjeta p{
+    color: #888F8F;
+}
+
+/* Datos */
+.pag .index-sobre-mi .contenido .info .dato p{
+    color: #888F8F;
+    margin: 1rem 0 0 0;
+}
+
+.pag .index-sobre-mi .contenido .info .dato h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Grid-Area Tarjetas y Datos */
+.pag .index-sobre-mi .contenido .info{
+    width: 400px;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "area-1 area-2"
+    "area-3 area-4"
+    "area-5 area-6"
+    "area-7 area-8";
+}
+
+.pag .index-sobre-mi .contenido .info .area-1{
+    grid-area: area-1;
+}
+.pag .index-sobre-mi .contenido .info .area-2{
+    grid-area: area-2;
+}
+.pag .index-sobre-mi .contenido .info .area-3{
+    grid-area: area-3;
+}
+.pag .index-sobre-mi .contenido .info .area-4{
+    grid-area: area-4;
+}
+.pag .index-sobre-mi .contenido .info .area-5{
+    grid-area: area-5;
+}
+.pag .index-sobre-mi .contenido .info .area-6{
+    grid-area: area-6;
+}
+.pag .index-sobre-mi .contenido .info .area-7{
+    grid-area: area-7;
+}
+.pag .index-sobre-mi .contenido .info .area-8{
+    grid-area: area-8;
+}
+
+/* ------------- Estilos Section Habilidades -------------*/
+
+/* Título de sección */
+.pag .index-habilidades h3{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.pag .index-habilidades h3::before,
+.pag .index-habilidades h3::after{
+    content: "────";
+    margin: 0 1rem 0 1rem;
+}
+
+/* -------------------------------------- Estilos Contacto -------------------------------------- */
+
+/* Color del placeholder */
+.placeholder-gris::placeholder {
+  color: #bebebe;
+}
+
+/* -------------------------------------- Media Queries -------------------------------------- */
+
+@media screen and (max-width: 1024px){
+
+    /* Elimino el espaciado por la sidebar */
+    .pag,
+    .pag-2,
+    .pag-3{
+        padding-left: 0;
+    }
+
+    /* Disposición Contenedores */
+    .pag .index-main,
+    .pag .index-sobre-mi .contenido{
+        flex-direction: column;
+    }
+    
+    /* Main */
+    .pag .index-main .texto{
+        text-align: center;
+    }
+
+    .pag .index-main .texto .contenedor-botones,
+    .pag .index-main .texto .contenedor-botones-redes{
+        justify-content: center;
+    }
+
+    /* Sobre Mí */
+    .pag .index-sobre-mi .contenido .texto{
+        text-align: center;
+    }
+
+    .pag .index-sobre-mi .contenido .info{
+        justify-content: center;
+    }
+
+    .pag .index-sobre-mi .contenido .info .dato{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    /* Main */
+    .pag .index-main{
+        height: auto;
+    }
+
+    .pag .index-main .texto{
+        padding: 50px 20px 0 20px
+    }
+
+    .pag .index-main .imagen{
+        padding-bottom: 100px;
+    }
+
+    .pag .index-main .imagen img{
+        max-width: 400px;
+        box-shadow: none;
+    }
+
+    /* Sobre Mí */
+    .pag .index-sobre-mi .contenido .info{
+        justify-content: center;
+    }
+
+    .pag .index-sobre-mi .contenido .info .dato{
+        text-align: center;
+    }
+
+    .pag .index-sobre-mi .contenido .texto p{
+        padding: 0 20px;
+    }
+}

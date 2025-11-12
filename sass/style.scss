@@ -1,0 +1,26 @@
+//RESET
+@use "base/reset" as *;
+
+//GENERAL
+@use "base/general" as *;
+
+//NAVBAR
+@use "base/navbar" as *;
+
+//FOOTER
+@use "base/footer" as *;
+
+//HOME
+@use "pages/home" as *;
+
+//PROYECTOS
+@use "pages/proyectos" as *;
+
+//CONTACTO
+@use "pages/contacto" as *;
+
+// MQ TABLET
+@use "layout/mq-tablet.scss" as *;
+
+// MQ MOBILE
+@use "layout/mq-mobile.scss" as *;

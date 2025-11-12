@@ -1,0 +1,8 @@
+/* -------------------------------------- Estilos Contacto -------------------------------------- */
+
+// Color del placeholder
+.placeholder-gris{
+    &::placeholder{
+        color: #bebebe;
+    }
+}
