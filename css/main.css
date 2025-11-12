@@ -241,6 +241,14 @@ footer p span{
 
 /* ------------- Estilos Section Sobre Mí -------------*/
 
+.wave-1{
+    transform: translateY(5px);
+}
+
+.pag .index-sobre-mi{
+    background-color: #343434;
+}
+
 /* Disposición contenedores */
 .pag .index-sobre-mi .contenido{
     display: flex;
