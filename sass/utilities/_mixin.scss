@@ -26,6 +26,21 @@
     @include flex-center;
 }
 
+// Títulos Sección
+@mixin titulo-section{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    &::before{
+        content: "────";
+        margin: 0 1rem 0 1rem;
+    }
+    &::after{
+        content: "────";
+        margin: 0 1rem 0 1rem;
+    }
+}
+
 // Animación Hover Scale
 @mixin anim-hover-scale($size, $trans){
     transition: $trans;
@@ -46,5 +61,22 @@
 @mixin anim-hover-shadow{
     &:hover{
         box-shadow: 1px 1px 15px whitesmoke;
+    }
+}
+
+// Animación Hover pulse infinito (sólo para proyectos)
+@mixin anim-hover-pulse{
+    &:hover{
+        i{
+            animation: pulse 1s infinite;
+        }
+    }
+    @keyframes pulse{
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
     }
 }

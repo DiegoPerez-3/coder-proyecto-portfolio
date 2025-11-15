@@ -1,0 +1,176 @@
+// Variables
+@use "../utilities/variables" as *;
+// Mixin
+@use "../utilities/mixin" as *;
+
+/* -------------------------------------- Estilos Proyectos -------------------------------------- */
+
+/* ------------- Estilos Main -------------*/
+
+.pag-2{
+    .proyectos-main{
+        @include flex-center;
+        flex-direction: column;
+        height: 100vh;
+        // Título Mis Proyectos
+        h1{
+            font-weight: bold;
+            padding: 3rem 0;
+        }
+        // Texto
+        .texto{
+            @include flex-center;
+            flex-direction: column;
+            p{
+            text-align: center;
+            max-width: 450px;
+            }
+            i{
+                font-size: 5rem;
+                margin-top: 50px;
+                animation: hammer 1.5s infinite;
+                @keyframes hammer{
+                    70%{
+                        transform: rotate(45deg);
+                    }
+                    100%{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+    
+    /* ------------- Estilos Section Mis Especialidades -------------*/
+
+    .proyectos-especialidades{
+        // Título Mis Especialidades
+        h1{
+            @include titulo-section;
+            padding: 3rem 0;
+        }
+        // Sitios
+        .sitios{
+            // Landing
+            .landing{
+                @include flex-center;
+                background-color: $bg-color-light;
+                padding: 30px 0;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-pulse;
+                i{
+                    margin: 0 50px;
+                    @include icono-redondo($bg-color, $color-text, 100px);
+                    font-size: 3rem;
+                    padding: 0 25px;
+                }
+                .landing-text{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            // Corporative
+            .corporativo{
+                @include flex-center;
+                background-color: $bg-color;
+                padding: 30px 0;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-pulse;
+                i{
+                    margin: 0 50px;
+                    @include icono-redondo($bg-color-light, $color-text, 100px);
+                    font-size: 3rem;
+                    padding: 0 25px;
+                }
+                .corporativo-text{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            // Portfolio
+            .portfolio{
+                @include flex-center;
+                background-color: $bg-color-light;
+                padding: 30px 0;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-pulse;
+                i{
+                    margin: 0 50px;
+                    @include icono-redondo($bg-color, $color-text, 100px);
+                    font-size: 3rem;
+                    padding: 0 25px;
+                }
+                .portfolio-text{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                }                
+            }
+            // E-Commerce
+            .e-commerce{
+                @include flex-center;
+                background-color: $bg-color;
+                padding: 30px 0;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-pulse;
+                i{
+                    margin: 0 50px;
+                    @include icono-redondo($bg-color-light, $color-text, 100px);
+                    font-size: 3rem;
+                    padding: 0 25px;
+                }
+                .e-commerce-text{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                }                  
+            }
+            // Blogs
+            .blog{
+                @include flex-center;
+                background-color: $bg-color-light;
+                padding: 30px 0;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-pulse;
+                i{
+                    margin: 0 50px;
+                    @include icono-redondo($bg-color, $color-text, 100px);
+                    font-size: 3rem;
+                    padding: 0 25px;
+                }
+                .blog-text{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                }                
+            }
+            // Dashboards
+            .dashboard{
+                @include flex-center;
+                background-color: $bg-color;
+                padding: 30px 0;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-pulse;
+                i{
+                    margin: 0 50px;
+                    @include icono-redondo($bg-color-light, $color-text, 100px);
+                    font-size: 3rem;
+                    padding: 0 25px;
+                }
+                .dashboard-text{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                }                
+            }
+        }        
+    }
+}

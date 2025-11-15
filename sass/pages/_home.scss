@@ -99,16 +99,7 @@
         background-color: $bg-color-light;
         // Título de Sección
         h3{
-            text-align: center;
-            font-weight: bold;
-            &::before{
-                content: "────";
-                margin: 0 1rem 0 1rem;
-            }
-            &::after{
-                content: "────";
-                margin: 0 1rem 0 1rem;
-            }
+            @include titulo-section;
         }
         // Disposición Contenedores
         .contenido{
@@ -211,8 +202,8 @@
             }
         }
         
-        div{
-            div{
+        .hab-1{
+            .hab-2{
                 @include anim-hover-scale(1.1, $trans-medium);
                 @include anim-hover-shadow;
             }

@@ -233,6 +233,7 @@ footer p span {
 }
 .pag .index-sobre-mi h3 {
   text-align: center;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 .pag .index-sobre-mi h3::before {
@@ -332,14 +333,328 @@ footer p span {
   content: "────";
   margin: 0 1rem 0 1rem;
 }
-.pag .index-habilidades div div {
+.pag .index-habilidades .hab-1 .hab-2 {
   transition: 0.5s;
 }
-.pag .index-habilidades div div:hover {
+.pag .index-habilidades .hab-1 .hab-2:hover {
   transform: scale(1.1);
 }
-.pag .index-habilidades div div:hover {
+.pag .index-habilidades .hab-1 .hab-2:hover {
   box-shadow: 1px 1px 15px whitesmoke;
+}
+
+/* -------------------------------------- Estilos Proyectos -------------------------------------- */
+/* ------------- Estilos Main -------------*/
+.pag-2 .proyectos-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.pag-2 .proyectos-main h1 {
+  font-weight: bold;
+  padding: 3rem 0;
+}
+.pag-2 .proyectos-main .texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pag-2 .proyectos-main .texto p {
+  text-align: center;
+  max-width: 450px;
+}
+.pag-2 .proyectos-main .texto i {
+  font-size: 5rem;
+  margin-top: 50px;
+  animation: hammer 1.5s infinite;
+}
+@keyframes hammer {
+  70% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.pag-2 {
+  /* ------------- Estilos Section Mis Especialidades -------------*/
+}
+.pag-2 .proyectos-especialidades h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.pag-2 .proyectos-especialidades h1::before {
+  content: "────";
+  margin: 0 1rem 0 1rem;
+}
+.pag-2 .proyectos-especialidades h1::after {
+  content: "────";
+  margin: 0 1rem 0 1rem;
+}
+.pag-2 .proyectos-especialidades h1 {
+  padding: 3rem 0;
+}
+.pag-2 .proyectos-especialidades .sitios .landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343434;
+  padding: 30px 0;
+}
+.pag-2 .proyectos-especialidades .sitios .landing:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-2 .proyectos-especialidades .sitios .landing {
+  transition: 0.3s;
+}
+.pag-2 .proyectos-especialidades .sitios .landing:hover {
+  transform: scale(1.01);
+}
+.pag-2 .proyectos-especialidades .sitios .landing:hover i {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pag-2 .proyectos-especialidades .sitios .landing i {
+  margin: 0 50px;
+  background-color: #1F1F1F;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 25px;
+}
+.pag-2 .proyectos-especialidades .sitios .landing .landing-text h2 {
+  font-size: 1.5rem;
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F1F1F;
+  padding: 30px 0;
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo {
+  transition: 0.3s;
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo:hover {
+  transform: scale(1.01);
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo:hover i {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo i {
+  margin: 0 50px;
+  background-color: #343434;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 25px;
+}
+.pag-2 .proyectos-especialidades .sitios .corporativo .corporativo-text h2 {
+  font-size: 1.5rem;
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343434;
+  padding: 30px 0;
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio {
+  transition: 0.3s;
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio:hover {
+  transform: scale(1.01);
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio:hover i {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio i {
+  margin: 0 50px;
+  background-color: #1F1F1F;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 25px;
+}
+.pag-2 .proyectos-especialidades .sitios .portfolio .portfolio-text h2 {
+  font-size: 1.5rem;
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F1F1F;
+  padding: 30px 0;
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce {
+  transition: 0.3s;
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce:hover {
+  transform: scale(1.01);
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce:hover i {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce i {
+  margin: 0 50px;
+  background-color: #343434;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 25px;
+}
+.pag-2 .proyectos-especialidades .sitios .e-commerce .e-commerce-text h2 {
+  font-size: 1.5rem;
+}
+.pag-2 .proyectos-especialidades .sitios .blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343434;
+  padding: 30px 0;
+}
+.pag-2 .proyectos-especialidades .sitios .blog:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-2 .proyectos-especialidades .sitios .blog {
+  transition: 0.3s;
+}
+.pag-2 .proyectos-especialidades .sitios .blog:hover {
+  transform: scale(1.01);
+}
+.pag-2 .proyectos-especialidades .sitios .blog:hover i {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pag-2 .proyectos-especialidades .sitios .blog i {
+  margin: 0 50px;
+  background-color: #1F1F1F;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 25px;
+}
+.pag-2 .proyectos-especialidades .sitios .blog .blog-text h2 {
+  font-size: 1.5rem;
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F1F1F;
+  padding: 30px 0;
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard {
+  transition: 0.3s;
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard:hover {
+  transform: scale(1.01);
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard:hover i {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard i {
+  margin: 0 50px;
+  background-color: #343434;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 25px;
+}
+.pag-2 .proyectos-especialidades .sitios .dashboard .dashboard-text h2 {
+  font-size: 1.5rem;
 }
 
 /* -------------------------------------- Estilos Contacto -------------------------------------- */
