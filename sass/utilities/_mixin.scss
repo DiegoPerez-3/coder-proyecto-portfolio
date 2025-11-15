@@ -1,0 +1,50 @@
+// Flex
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Botón
+@mixin boton($bg, $color, $border, $radius){
+    background-color: $bg;
+    color: $color;
+    border: $border;
+    border-radius: $radius;
+    padding: 0.8rem 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+// Ícono redondo
+@mixin icono-redondo($bg, $color, $size){
+    background-color: $bg;
+    color: $color;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    @include flex-center;
+}
+
+// Animación Hover Scale
+@mixin anim-hover-scale($size, $trans){
+    transition: $trans;
+    &:hover{
+        transform: scale($size);
+    }
+}
+
+// Animación Hover Translate Up
+@mixin anim-hover-up($trans){
+    transition: $trans;
+    &:hover{
+        transform: translateY(-7px);
+    }
+}
+
+// Animación Hover Shadow
+@mixin anim-hover-shadow{
+    &:hover{
+        box-shadow: 1px 1px 15px whitesmoke;
+    }
+}

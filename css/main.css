@@ -20,11 +20,12 @@ body {
 
 /* -------------------------------------- Estilos Navbar -------------------------------------- */
 .sidebar {
+  display: none;
   position: fixed;
   height: 100vh;
   width: 70px;
   background-color: #1B1B1B;
-  transition: width 0.3s;
+  transition: 0.3s;
   z-index: 1000;
 }
 .sidebar:hover {
@@ -47,6 +48,8 @@ body {
   justify-content: space-between;
 }
 .sidebar nav .lista-links {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
 }
@@ -59,7 +62,7 @@ body {
   transition: background-color 0.3s;
 }
 .sidebar nav .lista-links li a:hover {
-  background-color: #323232;
+  background-color: #343434;
 }
 .sidebar nav .lista-links li a i {
   margin: 20px 10px 20px 25px;
@@ -71,6 +74,8 @@ body {
   white-space: nowrap;
 }
 .sidebar nav .lista-redes {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   gap: 10px;
@@ -84,14 +89,14 @@ body {
   color: #1B1B1B;
 }
 .sidebar nav .lista-redes li a i {
-  background-color: #323232;
+  background-color: #343434;
   color: whitesmoke;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
   opacity: 0;
   transition: opacity 0.1s;
@@ -101,7 +106,7 @@ body {
 footer {
   text-align: center;
   padding: 20px 0px;
-  border-top: 1px solid #363636;
+  border-top: 1px solid #343434;
   margin: 0 10%;
 }
 footer p {
@@ -138,20 +143,40 @@ footer p span {
 }
 .pag .index-main .texto .contenedor-botones {
   padding-top: 30px;
-}
-.pag .index-main .texto .contenedor-botones a {
-  border-radius: 50px;
-  padding: 0.8rem 1.5rem;
-  font-weight: bolder;
-  text-decoration: none;
+  display: flex;
+  gap: 1rem;
 }
 .pag .index-main .texto .contenedor-botones .boton-uno {
   background-color: whitesmoke;
   color: #1F1F1F;
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.pag .index-main .texto .contenedor-botones .boton-uno:hover {
+  transform: translateY(-7px);
+}
+.pag .index-main .texto .contenedor-botones .boton-uno:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
 }
 .pag .index-main .texto .contenedor-botones .boton-dos {
-  border: 2px solid whitesmoke;
+  background-color: none;
   color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.pag .index-main .texto .contenedor-botones .boton-dos:hover {
+  transform: translateY(-7px);
+}
+.pag .index-main .texto .contenedor-botones .boton-dos:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
 }
 .pag .index-main .texto .contenedor-botones .boton-dos:hover {
   background-color: whitesmoke;
@@ -164,25 +189,33 @@ footer p span {
 }
 .pag .index-main .texto .contenedor-botones-redes a {
   text-decoration: none;
+  transition: 0.5s;
+}
+.pag .index-main .texto .contenedor-botones-redes a:hover {
+  transform: scale(1.1);
 }
 .pag .index-main .texto .contenedor-botones-redes a:hover i {
   background-color: whitesmoke;
   color: #1B1B1B;
 }
 .pag .index-main .texto .contenedor-botones-redes a i {
-  background-color: #323232;
+  background-color: #343434;
   color: whitesmoke;
   border-radius: 50%;
-  height: 50px;
   width: 50px;
+  height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
 }
 .pag .index-main .imagen {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .pag .index-main .imagen img {
   max-width: 450px;
@@ -232,6 +265,13 @@ footer p span {
   padding: 1rem;
   border-radius: 50px;
   text-align: center;
+  transition: 0.5s;
+}
+.pag .index-sobre-mi .contenido .info .tarjeta:hover {
+  transform: scale(1.1);
+}
+.pag .index-sobre-mi .contenido .info .tarjeta:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
 }
 .pag .index-sobre-mi .contenido .info .tarjeta i {
   font-size: 2rem;
@@ -292,10 +332,19 @@ footer p span {
   content: "────";
   margin: 0 1rem 0 1rem;
 }
+.pag .index-habilidades div div {
+  transition: 0.5s;
+}
+.pag .index-habilidades div div:hover {
+  transform: scale(1.1);
+}
+.pag .index-habilidades div div:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
 
 /* -------------------------------------- Estilos Contacto -------------------------------------- */
 .placeholder-gris::placeholder {
-  color: #bebebe;
+  color: #888F8F;
 }
 
 /* -------------------------------------- Media Queries Tablet -------------------------------------- */

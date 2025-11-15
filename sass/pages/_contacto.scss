@@ -1,8 +1,11 @@
+// Variables
+@use "../utilities/variables" as *;
+
 /* -------------------------------------- Estilos Contacto -------------------------------------- */
 
 // Color del placeholder
 .placeholder-gris{
     &::placeholder{
-        color: #bebebe;
+        color: $color-text-light;
     }
 }

@@ -1,11 +1,17 @@
+// Variables
+@use "../utilities/variables" as *;
+// Mixin
+@use "../utilities/mixin" as *;
+
 /* -------------------------------------- Estilos Navbar -------------------------------------- */
 
 .sidebar{
+    display: none;
     position: fixed;
     height: 100vh;
     width: 70px;
-    background-color: #1B1B1B;
-    transition: width 0.3s;
+    background-color: $bg-color-dark;
+    transition: $trans-fast;
     z-index: 1000;
     // Expansión navbar con el mouse
     &:hover{
@@ -17,7 +23,7 @@
                     a{
                         i{
                             opacity: 1;
-                            transition: opacity 0.3s;
+                            transition: opacity $trans-fast;
                             transition-delay: 0.1s;
                         }
                     }
@@ -29,7 +35,7 @@
                     a{
                         span{
                             opacity: 1;
-                            transition: opacity 0.3s;
+                            transition: opacity $trans-fast;
                             transition-delay: 0.1s;
                         }
                     }
@@ -45,6 +51,8 @@
         justify-content: space-between;
         // Links
         .lista-links{
+            display: flex;
+            flex-direction: column;
             list-style: none;
             padding: 0;
             li{
@@ -52,11 +60,11 @@
                     display: flex;
                     align-items: center;
                     gap: 15px;
-                    color: whitesmoke;
+                    color: $color-text;
                     text-decoration: none;
-                    transition: background-color 0.3s;
+                    transition: background-color $trans-fast;
                     &:hover{
-                        background-color:#323232;
+                        background-color: $bg-color-light;
                     }
                     // Íconos
                     i{
@@ -74,6 +82,8 @@
         }
         // Redes
         .lista-redes{
+            display: flex;
+            flex-direction: row;
             list-style: none;
             padding: 0;
             gap: 10px;
@@ -83,19 +93,12 @@
                     text-decoration: none;
                     &:hover{
                         i{
-                            background-color: whitesmoke;
-                            color: #1B1B1B;
+                            background-color: $color-text;
+                            color: $bg-color-dark;
                         }
                     }
                     i{
-                        background-color: #323232;
-                        color: whitesmoke;
-                        border-radius: 50%;
-                        width: 40px;
-                        height: 40px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include icono-redondo($bg-color-light, $color-text, 40px);
                         font-size: 1.2rem;
                         opacity: 0;
                         transition: opacity 0.1s;

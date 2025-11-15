@@ -1,3 +1,9 @@
+// Variables
+@use "../utilities/variables" as *;
+// Mixin
+@use "../utilities/mixin" as *;
+
+
 /* -------------------------------------- Estilos Index -------------------------------------- */
 
 /* ------------- Estilos Main -------------*/
@@ -6,9 +12,7 @@
     // Disposición contenedores
     .index-main{
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         gap: 50px;
         // Textos
         .texto{
@@ -29,24 +33,23 @@
             // Botones Main
             .contenedor-botones{
                 padding-top: 30px;
-                a{
-                    border-radius: 50px;
-                    padding: 0.8rem 1.5rem;
-                    font-weight: bolder;
-                    text-decoration: none;
-                }
+                display: flex;
+                gap: 1rem;
+
                 // Botón Uno
                 .boton-uno{
-                    background-color: whitesmoke;
-                    color: #1F1F1F;
+                    @include boton($color-text, $bg-color, none, $radius);
+                    @include anim-hover-up($trans-medium);
+                    @include anim-hover-shadow;
                 }
                 // Botón Dos
                 .boton-dos{
-                    border: 2px solid whitesmoke;
-                    color: whitesmoke;
+                    @include boton(none, $color-text, 2px solid $color-text, $radius);
+                    @include anim-hover-up($trans-medium);
+                    @include anim-hover-shadow;
                     &:hover{
-                        background-color: whitesmoke;
-                        color: #1B1B1B;
+                        background-color: $color-text;
+                        color: $bg-color-dark;
                     }
                 }
             }
@@ -57,21 +60,16 @@
                 padding-top: 20px;
                 a{
                     text-decoration: none;
+                    @include anim-hover-scale(1.1, $trans-medium);
                     &:hover{
                         i{
-                            background-color: whitesmoke;
-                            color: #1B1B1B;
+                            background-color: $color-text;
+                            color: $bg-color-dark;
                         }
                     }
                     i{
-                        background-color: #323232;
-                        color: whitesmoke;
-                        border-radius: 50%;
-                        height: 50px;
-                        width: 50px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include icono-redondo($bg-color-light, $color-text, 50px);
+                        @include flex-center;
                         font-size: 1.5rem;
                     }
                 }
@@ -80,12 +78,11 @@
 
         // Profile Pic
         .imagen{
-            display: flex;
-            justify-content: center;
+            @include flex-center;
             img{
                 max-width: 450px;
-                border-radius: 50px;
-                box-shadow: 30px 30px 3px #343434;
+                border-radius: $radius;
+                box-shadow: 30px 30px 3px $bg-color-light;
             }
         }
     }
@@ -99,7 +96,7 @@
 
 .pag{
     .index-sobre-mi{
-        background-color: #343434;
+        background-color: $bg-color-light;
         // Título de Sección
         h3{
             text-align: center;
@@ -115,9 +112,7 @@
         }
         // Disposición Contenedores
         .contenido{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             gap: 50px;
             padding: 50px 0 50px 0;
             // Contenedor Izquierda (Texto)
@@ -133,23 +128,25 @@
             .info{
                 // Tarjetas
                 .tarjeta{
-                    background-color: #1F1F1F;
+                    background-color: $bg-color;
                     width: 10rem;
                     height: 10rem;
                     padding: 1rem;
-                    border-radius: 50px;
+                    border-radius: $radius;
                     text-align: center;
+                    @include anim-hover-scale(1.1, $trans-medium);
+                    @include anim-hover-shadow;
                     i{
                         font-size: 2rem;
                     }
                     p{
-                        color: #888F8F;
+                        color: $color-text-light;
                     }
                 }
                 // Datos
                 .dato{
                     p{
-                        color: #888F8F;
+                        color: $color-text-light;
                         margin: 1rem 0 0 0;
                     }
                     h4{
@@ -211,6 +208,13 @@
             &::after{
                 content: "────";
                 margin: 0 1rem 0 1rem;
+            }
+        }
+        
+        div{
+            div{
+                @include anim-hover-scale(1.1, $trans-medium);
+                @include anim-hover-shadow;
             }
         }
     }

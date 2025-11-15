@@ -1,26 +1,26 @@
 //RESET
-@use "base/reset" as *;
+@import "base/reset";
 
 //GENERAL
-@use "base/general" as *;
+@import "layout/general";
 
 //NAVBAR
-@use "base/navbar" as *;
+@import "layout/navbar";
 
 //FOOTER
-@use "base/footer" as *;
+@import "layout/footer";
 
 //HOME
-@use "pages/home" as *;
+@import "pages/home";
 
 //PROYECTOS
-@use "pages/proyectos" as *;
+@import "pages/proyectos";
 
 //CONTACTO
-@use "pages/contacto" as *;
+@import "pages/contacto";
 
 // MQ TABLET
-@use "layout/mq-tablet.scss" as *;
+@import "responsive/_tablet.scss";
 
 // MQ MOBILE
-@use "layout/mq-mobile.scss" as *;
+@import "responsive/_mobile.scss";

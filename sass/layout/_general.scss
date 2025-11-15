@@ -1,8 +1,11 @@
+// Variables
+@use "../utilities/variables" as *;
+
 /* -------------------------------------- Estilos Generales -------------------------------------- */
 
 body{
-    color: whitesmoke;
-    background-color: #1F1F1F;
+    color: $color-text;
+    background-color: $bg-color;
 }
 
 .pag,
