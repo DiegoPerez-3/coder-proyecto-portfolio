@@ -1,7 +1,10 @@
 /* -------------------------------------- Media Queries Mobile -------------------------------------- */
 
+/* --------- HOME ---------- */
+
 @media screen and (max-width: 768px){
     .pag{
+        
         //Main
         .index-main{
             height: auto;
@@ -31,6 +34,63 @@
                         padding: 0 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+/* --------- PROYECTOS ---------- */
+
+@media screen and (max-width: 768px){
+    .pag-2{
+    
+        // Main
+        .proyectos-main{
+            .texto{
+                p{
+                    margin: 5px 20px;
+                }
+            }
+        }
+
+        // Section Especialidades
+        .proyectos-especialidades{
+            h1{
+                &::before,
+                &::after{
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+/* --------- CONTACTO ---------- */
+
+@media screen and (max-width: 768px){
+    .pag-3{
+
+        //Main
+        .contacto-main{
+            .texto{
+                margin: 0 20px;
+                ul{
+                    li{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .imagen{
+                img{
+                    display: none;
+                }
+            }
+        }
+
+        // Section Final
+        .contacto-final{
+            p{
+                margin: 50px 20px;
             }
         }
     }

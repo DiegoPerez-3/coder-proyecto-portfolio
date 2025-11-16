@@ -8,7 +8,9 @@
 /* ------------- Estilos Main -------------*/
 
 .pag-2{
+    // Main
     .proyectos-main{
+        position: relative;
         @include flex-center;
         flex-direction: column;
         height: 100vh;
@@ -25,6 +27,7 @@
             text-align: center;
             max-width: 450px;
             }
+            // Animación Icono Martillo
             i{
                 font-size: 5rem;
                 margin-top: 50px;
@@ -39,10 +42,17 @@
                 }
             }
         }
-    }
-    
-    /* ------------- Estilos Section Mis Especialidades -------------*/
 
+        // Animación Scroll Arrow
+        .scroll-arrow{
+            @include anim-arrow-scroll;
+        }
+    }
+}
+
+/* ------------- Estilos Section Mis Especialidades -------------*/
+
+.pag-2{
     .proyectos-especialidades{
         // Título Mis Especialidades
         h1{
@@ -57,7 +67,7 @@
                 background-color: $bg-color-light;
                 padding: 30px 0;
                 @include anim-hover-shadow;
-                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-scale-y(1.01, $trans-fast);
                 @include anim-hover-pulse;
                 i{
                     margin: 0 50px;
@@ -77,7 +87,7 @@
                 background-color: $bg-color;
                 padding: 30px 0;
                 @include anim-hover-shadow;
-                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-scale-y(1.01, $trans-fast);
                 @include anim-hover-pulse;
                 i{
                     margin: 0 50px;
@@ -97,7 +107,7 @@
                 background-color: $bg-color-light;
                 padding: 30px 0;
                 @include anim-hover-shadow;
-                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-scale-y(1.01, $trans-fast);
                 @include anim-hover-pulse;
                 i{
                     margin: 0 50px;
@@ -117,7 +127,7 @@
                 background-color: $bg-color;
                 padding: 30px 0;
                 @include anim-hover-shadow;
-                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-scale-y(1.01, $trans-fast);
                 @include anim-hover-pulse;
                 i{
                     margin: 0 50px;
@@ -137,7 +147,7 @@
                 background-color: $bg-color-light;
                 padding: 30px 0;
                 @include anim-hover-shadow;
-                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-scale-y(1.01, $trans-fast);
                 @include anim-hover-pulse;
                 i{
                     margin: 0 50px;
@@ -157,7 +167,7 @@
                 background-color: $bg-color;
                 padding: 30px 0;
                 @include anim-hover-shadow;
-                @include anim-hover-scale(1.01, $trans-fast);
+                @include anim-hover-scale-y(1.01, $trans-fast);
                 @include anim-hover-pulse;
                 i{
                     margin: 0 50px;

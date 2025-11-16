@@ -119,6 +119,7 @@ footer p span {
 /* -------------------------------------- Estilos Index -------------------------------------- */
 /* ------------- Estilos Main -------------*/
 .pag .index-main {
+  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -222,10 +223,28 @@ footer p span {
   border-radius: 50px;
   box-shadow: 30px 30px 3px #343434;
 }
+.pag .index-main .scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3 ease;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
 
 /* ------------- Estilos Section Sobre Mí -------------*/
-.wave-1 {
-  transform: translateY(5px);
+.pag .wave-1 {
+  margin-bottom: -2px;
 }
 
 .pag .index-sobre-mi {
@@ -236,13 +255,12 @@ footer p span {
   font-size: 1.8rem;
   font-weight: bold;
 }
-.pag .index-sobre-mi h3::before {
+.pag .index-sobre-mi h3::before, .pag .index-sobre-mi h3::after {
   content: "────";
   margin: 0 1rem 0 1rem;
 }
-.pag .index-sobre-mi h3::after {
-  content: "────";
-  margin: 0 1rem 0 1rem;
+.pag .index-sobre-mi h3 {
+  padding-top: 5px;
 }
 .pag .index-sobre-mi .contenido {
   display: flex;
@@ -346,6 +364,7 @@ footer p span {
 /* -------------------------------------- Estilos Proyectos -------------------------------------- */
 /* ------------- Estilos Main -------------*/
 .pag-2 .proyectos-main {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,19 +398,32 @@ footer p span {
     transform: rotate(0deg);
   }
 }
-.pag-2 {
-  /* ------------- Estilos Section Mis Especialidades -------------*/
+.pag-2 .proyectos-main .scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3 ease;
+  animation: bounce 1.5s infinite;
 }
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
+
+/* ------------- Estilos Section Mis Especialidades -------------*/
 .pag-2 .proyectos-especialidades h1 {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
 }
-.pag-2 .proyectos-especialidades h1::before {
-  content: "────";
-  margin: 0 1rem 0 1rem;
-}
-.pag-2 .proyectos-especialidades h1::after {
+.pag-2 .proyectos-especialidades h1::before, .pag-2 .proyectos-especialidades h1::after {
   content: "────";
   margin: 0 1rem 0 1rem;
 }
@@ -412,7 +444,7 @@ footer p span {
   transition: 0.3s;
 }
 .pag-2 .proyectos-especialidades .sitios .landing:hover {
-  transform: scale(1.01);
+  transform: scaleY(1.01);
 }
 .pag-2 .proyectos-especialidades .sitios .landing:hover i {
   animation: pulse 1s infinite;
@@ -455,7 +487,7 @@ footer p span {
   transition: 0.3s;
 }
 .pag-2 .proyectos-especialidades .sitios .corporativo:hover {
-  transform: scale(1.01);
+  transform: scaleY(1.01);
 }
 .pag-2 .proyectos-especialidades .sitios .corporativo:hover i {
   animation: pulse 1s infinite;
@@ -498,7 +530,7 @@ footer p span {
   transition: 0.3s;
 }
 .pag-2 .proyectos-especialidades .sitios .portfolio:hover {
-  transform: scale(1.01);
+  transform: scaleY(1.01);
 }
 .pag-2 .proyectos-especialidades .sitios .portfolio:hover i {
   animation: pulse 1s infinite;
@@ -541,7 +573,7 @@ footer p span {
   transition: 0.3s;
 }
 .pag-2 .proyectos-especialidades .sitios .e-commerce:hover {
-  transform: scale(1.01);
+  transform: scaleY(1.01);
 }
 .pag-2 .proyectos-especialidades .sitios .e-commerce:hover i {
   animation: pulse 1s infinite;
@@ -584,7 +616,7 @@ footer p span {
   transition: 0.3s;
 }
 .pag-2 .proyectos-especialidades .sitios .blog:hover {
-  transform: scale(1.01);
+  transform: scaleY(1.01);
 }
 .pag-2 .proyectos-especialidades .sitios .blog:hover i {
   animation: pulse 1s infinite;
@@ -627,7 +659,7 @@ footer p span {
   transition: 0.3s;
 }
 .pag-2 .proyectos-especialidades .sitios .dashboard:hover {
-  transform: scale(1.01);
+  transform: scaleY(1.01);
 }
 .pag-2 .proyectos-especialidades .sitios .dashboard:hover i {
   animation: pulse 1s infinite;
@@ -658,11 +690,125 @@ footer p span {
 }
 
 /* -------------------------------------- Estilos Contacto -------------------------------------- */
-.placeholder-gris::placeholder {
+/* ------------- Estilos Main -------------*/
+.pag-3 .contacto-main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.pag-3 .contacto-main .imagen img {
+  max-width: 450px;
+}
+.pag-3 .contacto-main .texto {
+  max-width: 450px;
+}
+.pag-3 .contacto-main .texto h1 {
+  font-weight: bold;
+}
+.pag-3 .contacto-main .texto h2 {
+  margin-bottom: 40px;
+}
+.pag-3 .contacto-main .texto ul {
+  padding: 0;
+}
+.pag-3 .contacto-main .texto ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pag-3 .contacto-main .texto ul li i {
+  font-size: 1.8rem;
+}
+.pag-3 .contacto-main .scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3 ease;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
+
+/* ------------- Estilos Section Formulario -------------*/
+.pag-3 .wave-3 {
+  margin-bottom: -2px;
+}
+
+.pag-3 .contacto-formulario {
+  background-color: #343434;
+}
+.pag-3 .contacto-formulario .container .card:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-3 .contacto-formulario .container .card form .form-control:focus {
+  box-shadow: 0 0 0 2px whitesmoke;
+}
+.pag-3 .contacto-formulario .container .card form .boton-form:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-3 .contacto-formulario .container .card form .boton-form {
+  font-weight: bold;
+}
+.pag-3 .contacto-formulario .container .card form .placeholder-gris::placeholder {
   color: #888F8F;
 }
 
+/* ------------- Estilos Section Final -------------*/
+.pag-3 .contacto-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.pag-3 .contacto-final p {
+  margin: 50px 0;
+  max-width: 450px;
+}
+.pag-3 .contacto-final .contenedor-botones-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.pag-3 .contacto-final .contenedor-botones-redes a {
+  background-color: whitesmoke;
+  color: #1F1F1F;
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  width: 150px;
+}
+.pag-3 .contacto-final .contenedor-botones-redes a:hover {
+  box-shadow: 1px 1px 15px whitesmoke;
+}
+.pag-3 .contacto-final .contenedor-botones-redes a {
+  transition: 0.5s;
+}
+.pag-3 .contacto-final .contenedor-botones-redes a:hover {
+  transform: scale(1.1);
+}
+
 /* -------------------------------------- Media Queries Tablet -------------------------------------- */
+/* --------- HOME ---------- */
 @media screen and (max-width: 1024px) {
   .pag,
   .pag-2,
@@ -681,6 +827,9 @@ footer p span {
   .pag .index-main .texto .contenedor-botones-redes {
     justify-content: center;
   }
+  .pag .index-main .scroll-arrow {
+    display: none;
+  }
   .pag .index-sobre-mi .contenido {
     flex-direction: column;
   }
@@ -694,7 +843,87 @@ footer p span {
     text-align: center;
   }
 }
+/* --------- PROYECTOS ---------- */
+@media screen and (max-width: 1024px) {
+  .pag-2 .proyectos-main .scroll-arrow {
+    display: none;
+  }
+  .pag-2 .proyectos-especialidades .sitios .landing {
+    flex-direction: column;
+  }
+  .pag-2 .proyectos-especialidades .sitios .landing .landing-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .landing .landing-text p {
+    margin: 20px 20px 0 20px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .corporativo {
+    flex-direction: column;
+  }
+  .pag-2 .proyectos-especialidades .sitios .corporativo .corporativo-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .corporativo .corporativo-text p {
+    margin: 20px 20px 0 20px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .portfolio {
+    flex-direction: column;
+  }
+  .pag-2 .proyectos-especialidades .sitios .portfolio .portfolio-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .portfolio .portfolio-text p {
+    margin: 20px 20px 0 20px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .e-commerce {
+    flex-direction: column;
+  }
+  .pag-2 .proyectos-especialidades .sitios .e-commerce .e-commerce-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .e-commerce .e-commerce-text p {
+    margin: 20px 20px 0 20px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .blog {
+    flex-direction: column;
+  }
+  .pag-2 .proyectos-especialidades .sitios .blog .blog-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .blog .blog-text p {
+    margin: 20px 20px 0 20px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .dashboard {
+    flex-direction: column;
+  }
+  .pag-2 .proyectos-especialidades .sitios .dashboard .dashboard-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .pag-2 .proyectos-especialidades .sitios .dashboard .dashboard-text p {
+    margin: 20px 20px 0 20px;
+  }
+}
+/* --------- CONTACTO ---------- */
+@media screen and (max-width: 1024px) {
+  .pag-3 .contacto-main {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .pag-3 .contacto-main .texto h1, .pag-3 .contacto-main .texto h2 {
+    text-align: center;
+  }
+  .pag-3 .scroll-arrow {
+    display: none;
+  }
+}
 /* -------------------------------------- Media Queries Mobile -------------------------------------- */
+/* --------- HOME ---------- */
 @media screen and (max-width: 768px) {
   .pag .index-main {
     height: auto;
@@ -717,6 +946,30 @@ footer p span {
   }
   .pag .index-sobre-mi .contenido .texto p {
     padding: 0 20px;
+  }
+}
+/* --------- PROYECTOS ---------- */
+@media screen and (max-width: 768px) {
+  .pag-2 .proyectos-main .texto p {
+    margin: 5px 20px;
+  }
+  .pag-2 .proyectos-especialidades h1::before, .pag-2 .proyectos-especialidades h1::after {
+    content: none;
+  }
+}
+/* --------- CONTACTO ---------- */
+@media screen and (max-width: 768px) {
+  .pag-3 .contacto-main .texto {
+    margin: 0 20px;
+  }
+  .pag-3 .contacto-main .texto ul li {
+    margin-bottom: 15px;
+  }
+  .pag-3 .contacto-main .imagen img {
+    display: none;
+  }
+  .pag-3 .contacto-final p {
+    margin: 50px 20px;
   }
 }
 

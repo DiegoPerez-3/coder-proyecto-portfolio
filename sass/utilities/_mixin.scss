@@ -31,13 +31,19 @@
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
-    &::before{
-        content: "────";
-        margin: 0 1rem 0 1rem;
-    }
+    &::before,
     &::after{
         content: "────";
         margin: 0 1rem 0 1rem;
+    }
+}
+
+// Media Querie Disposición Texto Mis Especialidades (Proyectos)
+@mixin text-sitio{
+    text-align: center;
+    margin-top: 30px;
+    p{
+        margin: 20px 20px 0 20px;
     }
 }
 
@@ -46,6 +52,14 @@
     transition: $trans;
     &:hover{
         transform: scale($size);
+    }
+}
+
+//Animación Hover Scale Y
+@mixin anim-hover-scale-y($size, $trans){
+    transition: $trans;
+    &:hover{
+        transform: scaleY($size);
     }
 }
 
@@ -77,6 +91,27 @@
         }
         100%{
             transform: scale(1);
+        }
+    }
+}
+
+// Animación Scroll Arrow infinito
+@mixin anim-arrow-scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3 ease;
+    animation: bounce 1.5s infinite;
+
+    @keyframes bounce{
+        0%, 100%{
+            transform: translate(-50%, 0);
+        }
+        50%{
+            transform: translate(-50%, 10px);
         }
     }
 }

@@ -11,6 +11,7 @@
 .pag{
     // Disposición contenedores
     .index-main{
+        position: relative;
         height: 100vh;
         @include flex-center;
         gap: 50px;
@@ -85,13 +86,21 @@
                 box-shadow: 30px 30px 3px $bg-color-light;
             }
         }
+
+        // Scroll Arrow
+        .scroll-arrow{
+            @include anim-arrow-scroll;
+        }
     }
 }
 
 /* ------------- Estilos Section Sobre Mí -------------*/
 
-.wave-1{
-    transform: translateY(5px);
+.pag{
+    // Corrección Separador (quedaba una línea de separación)
+    .wave-1{
+        margin-bottom: -2px;
+    }
 }
 
 .pag{
@@ -100,6 +109,7 @@
         // Título de Sección
         h3{
             @include titulo-section;
+            padding-top: 5px;
         }
         // Disposición Contenedores
         .contenido{
@@ -202,6 +212,7 @@
             }
         }
         
+        // Animación Hover Habilidades
         .hab-1{
             .hab-2{
                 @include anim-hover-scale(1.1, $trans-medium);

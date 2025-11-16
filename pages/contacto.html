@@ -67,28 +67,62 @@
 
     <!-- Contenido de la página -->
     <div class="pag-3">
-        <!-- Main utilizando Bootstrap-->
-        <main id="contacto">
-            <!-- Título -->
-            <h1 class="text-center pt-5"> Contacto </h1>
-            
-            <!-- Tarjeta de Contacto -->
+
+        <!-- Main -->
+        <main class="contacto-main" id="contacto">
+            <!-- Contenedor Izquierda -->
+            <div class="imagen">
+                <img src="../img/mensaje.png" alt="Icono de una carta representando un mensaje">
+            </div>
+            <!-- Contenedor Derecha -->
+            <div class="texto">
+                <h1> Contacto </h1>
+                <h2> ¿Por qué contactarme? </h2>
+                <ul>
+                    <li>
+                        <i class="bi bi-lightning-charge"></i>
+                        Respuestas rápidas y comunicación clara.
+                    </li>
+                    <li>
+                        <i class="bi bi-display"></i>
+                        Desarrollo moderno, responsive y optimizado.
+                    </li>
+                    <li>
+                        <i class="bi bi-cash-coin"></i>
+                        Presupuestos claros y adaptados a tu necesidad.
+                    </li>
+                    <li>
+                        <i class="bi bi-tools"></i>
+                        Mantenimiento opcional y mejoras continuas.
+                    </li>
+                </ul>
+            </div>
+            <!-- Arrow Scroll -->
+            <i class="bi bi-chevron-down scroll-arrow"></i>
+        </main>
+
+        <!-- Separador Formulario Top -->
+        <svg class="wave-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#343434" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,176C480,181,600,139,720,106.7C840,75,960,53,1080,53.3C1200,53,1320,75,1380,85.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
+        <!-- Section Formulario -->
+        <section class="contacto-formulario">
+            <!-- Tarjeta de Contacto (Bootstrap) -->
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <div class="card text-white p-4 rounded-5" style="background-color: #232323;">
-                            <h3 class="card-title mb-3 text-center">Déjame tu mensaje</h3>
+                        <div class="card text-white p-4 rounded-5" style="background-color: #1F1F1F;">
+                            <h3 class="card-title mb-3 text-center"> Dejame tu mensaje </h3>
                             <p class="card-text mb-4 text-center">
-                                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                Si tenés una idea, un proyecto o simplemente querés hacerme una consulta, escribime y te responderé lo antes posible.
                             </p>
                             <!-- Formulario -->
                             <form>
                                 <!-- Nombre / Email -->
-                                <div class="row mb-3">
-                                    <div class="col">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
                                         <input type="text" class="form-control text-white border-0 placeholder-gris" style="background-color: #2E2E2E;" placeholder="Nombre">
                                     </div>
-                                    <div class="col">
+                                    <div class="col-12 col-md-6 mb-3">
                                         <input type="email" class="form-control text-white border-0 placeholder-gris" style="background-color: #2E2E2E;" placeholder="Email">
                                     </div>
                                 </div>
@@ -102,14 +136,30 @@
                                 </div>
                                 <!-- Botón de Enviar -->
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-light px-4 rounded-5"> Enviar </button>
+                                    <button type="submit" class="boton-form btn btn-light px-4 rounded-5"> Enviar </button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
+            </div>            
+        </section>
+
+        <!-- Separador Formulario Bottom -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#343434" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,176C480,181,600,139,720,106.7C840,75,960,53,1080,53.3C1200,53,1320,75,1380,85.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+        <!-- Section Final -->
+        <section class="contacto-final">
+            <!-- Texto -->
+            <h3> ¿Preferís hablar por otro medio? </h3>
+            <p> También podés encontrarme en mis redes. Estoy siempre abierto a nuevas ideas, colaboraciones y oportunidades. ¡Hablemos! </p>
+            <!-- Contenedor Botones Redes -->
+            <div class="contenedor-botones-redes">
+                <a href="https://www.instagram.com"> <i class="bi bi-instagram"></i> Instagram </a>
+                <a href="https://www.linkedin.com"> <i class="bi bi-linkedin"></i> Linkedin </a>
+                <a href="https://www.github.com/"> <i class="bi bi-github"></i> Github </a>
             </div>
-        </main>
+        </section>
 
         <!-- Footer -->
         <footer>

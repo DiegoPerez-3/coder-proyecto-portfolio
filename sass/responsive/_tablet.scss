@@ -1,4 +1,8 @@
+@use "../utilities/mixin" as *;
+
 /* -------------------------------------- Media Queries Tablet -------------------------------------- */
+
+/* --------- HOME ---------- */
 
 @media screen and (max-width: 1024px){
     .pag,
@@ -8,10 +12,11 @@
         padding-left: 0;
     }
     .pag{
+
+        // Main
         .index-main{
-            //Disposición Contenedores
+            // Disposición Contenedores
             flex-direction: column;
-            //Main
             .texto{
                 text-align: center;
                 .contenedor-botones{
@@ -21,10 +26,16 @@
                     justify-content: center;
                 }
             }
+            // Eliminar la flecha para scrollear en tablet y celular
+            .scroll-arrow{
+                display: none;
+            }
         }
+
+        // Section Sobre Mí
         .index-sobre-mi{
             .contenido{
-                //Disposición Contenedores
+                // Disposición Contenedores
                 flex-direction: column;
                 // Sobre Mí
                 .texto{
@@ -37,6 +48,87 @@
                     }
                 }
             }
+        }
+    }
+}
+
+/* --------- PROYECTOS ---------- */
+
+@media screen and (max-width: 1024px){
+    .pag-2{
+
+        // Main
+        .proyectos-main{
+            // Eliminar la flecha para scrollear en tablet y celular
+            .scroll-arrow{
+                display: none;
+            }
+        }
+
+        // Sección mis especialidades
+        .proyectos-especialidades{
+            .sitios{
+                // Disposición Icono y Texto para tablet y celular
+                .landing{
+                    flex-direction: column;
+                    .landing-text{
+                        @include text-sitio;
+                    }
+                }
+                .corporativo{
+                    flex-direction: column;
+                    .corporativo-text{
+                        @include text-sitio;
+                    }
+                }
+                .portfolio{
+                    flex-direction: column;
+                    .portfolio-text{
+                        @include text-sitio;
+                    }
+                }
+                .e-commerce{
+                    flex-direction: column;
+                    .e-commerce-text{
+                        @include text-sitio;
+                    }
+                }
+                .blog{
+                    flex-direction: column;
+                    .blog-text{
+                        @include text-sitio;
+                    }
+                }
+                .dashboard{
+                    flex-direction: column;
+                    .dashboard-text{
+                        @include text-sitio;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------- CONTACTO ---------- */
+
+@media screen and (max-width: 1024px){
+    .pag-3{
+
+        // Main
+        .contacto-main{
+            flex-direction: column-reverse;
+            gap: 0;
+            .texto{
+                h1, h2{
+                    text-align: center;
+                }
+            }
+        }
+
+        // Eliminar la flecha para scrollear en tablet y celular
+        .scroll-arrow{
+            display: none;
         }
     }
 }

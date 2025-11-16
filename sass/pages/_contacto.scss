@@ -1,11 +1,122 @@
 // Variables
 @use "../utilities/variables" as *;
+// Mixin
+@use "../utilities/mixin" as *;
 
 /* -------------------------------------- Estilos Contacto -------------------------------------- */
 
-// Color del placeholder
-.placeholder-gris{
-    &::placeholder{
-        color: $color-text-light;
+/* ------------- Estilos Main -------------*/
+
+.pag-3{
+    // Disposición Contenedores
+    .contacto-main{
+        position: relative;
+        height: 100vh;
+        @include flex-center;
+        gap: 50px;
+        // Imagen
+        .imagen{
+            img{
+                max-width: 450px;
+            }
+        }
+        // Texto
+        .texto{
+            max-width: 450px;
+            h1{
+                font-weight: bold;
+            }
+            h2{
+                margin-bottom: 40px;
+            }
+            // Lista
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    i{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        // Scroll Arrow
+        .scroll-arrow{
+            @include anim-arrow-scroll;
+        }
+    }
+}
+
+/* ------------- Estilos Section Formulario -------------*/
+
+.pag-3{
+    // Corrección Separador (quedaba una línea de separación)
+    .wave-3{
+        margin-bottom: -2px;
+    }    
+}
+
+.pag-3{
+    .contacto-formulario{
+        // Fondo Section Formulario
+        background-color: $bg-color-light;
+        .container{
+            .card{
+                @include anim-hover-shadow;
+                form{
+                    // Borde al seleccionar Input
+                    .form-control{
+                        &:focus{
+                            box-shadow: 0 0 0 2px $color-text;
+                        }
+                    }
+                    // Animación Botón Enviar
+                    .boton-form{
+                        @include anim-hover-shadow;
+                        font-weight: bold;        
+                    }
+                    // Color del placeholder
+                    .placeholder-gris{
+                        &::placeholder{
+                            color: $color-text-light;
+                        }
+                    }                 
+                }
+            }
+        }
+    }
+}
+
+/* ------------- Estilos Section Final -------------*/
+
+.pag-3{
+    .contacto-final{
+        // Disposición Contenedores
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        // Texto
+        p{
+            margin: 50px 0;
+            max-width: 450px;
+        }
+        // Botones Redes
+        .contenedor-botones-redes{
+            @include flex-center;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 50px;
+            a{
+                @include boton($color-text, $bg-color, none, $radius);
+                width: 150px;
+                @include anim-hover-shadow;
+                @include anim-hover-scale(1.1, $trans-medium);
+            }
+        }
     }
 }
