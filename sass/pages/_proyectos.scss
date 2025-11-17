@@ -55,7 +55,7 @@
 .pag-2{
     .proyectos-especialidades{
         // Título Mis Especialidades
-        h1{
+        h2{
             @include titulo-section;
             padding: 3rem 0;
         }
@@ -76,7 +76,7 @@
                     padding: 0 25px;
                 }
                 .landing-text{
-                    h2{
+                    h3{
                         font-size: 1.5rem;
                     }
                 }
@@ -96,7 +96,7 @@
                     padding: 0 25px;
                 }
                 .corporativo-text{
-                    h2{
+                    h3{
                         font-size: 1.5rem;
                     }
                 }
@@ -116,7 +116,7 @@
                     padding: 0 25px;
                 }
                 .portfolio-text{
-                    h2{
+                    h3{
                         font-size: 1.5rem;
                     }
                 }                
@@ -136,7 +136,7 @@
                     padding: 0 25px;
                 }
                 .e-commerce-text{
-                    h2{
+                    h3{
                         font-size: 1.5rem;
                     }
                 }                  
@@ -156,7 +156,7 @@
                     padding: 0 25px;
                 }
                 .blog-text{
-                    h2{
+                    h3{
                         font-size: 1.5rem;
                     }
                 }                
@@ -176,7 +176,7 @@
                     padding: 0 25px;
                 }
                 .dashboard-text{
-                    h2{
+                    h3{
                         font-size: 1.5rem;
                     }
                 }                

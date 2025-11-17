@@ -418,16 +418,16 @@ footer p span {
 }
 
 /* ------------- Estilos Section Mis Especialidades -------------*/
-.pag-2 .proyectos-especialidades h1 {
+.pag-2 .proyectos-especialidades h2 {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
 }
-.pag-2 .proyectos-especialidades h1::before, .pag-2 .proyectos-especialidades h1::after {
+.pag-2 .proyectos-especialidades h2::before, .pag-2 .proyectos-especialidades h2::after {
   content: "────";
   margin: 0 1rem 0 1rem;
 }
-.pag-2 .proyectos-especialidades h1 {
+.pag-2 .proyectos-especialidades h2 {
   padding: 3rem 0;
 }
 .pag-2 .proyectos-especialidades .sitios .landing {
@@ -470,7 +470,7 @@ footer p span {
   font-size: 3rem;
   padding: 0 25px;
 }
-.pag-2 .proyectos-especialidades .sitios .landing .landing-text h2 {
+.pag-2 .proyectos-especialidades .sitios .landing .landing-text h3 {
   font-size: 1.5rem;
 }
 .pag-2 .proyectos-especialidades .sitios .corporativo {
@@ -513,7 +513,7 @@ footer p span {
   font-size: 3rem;
   padding: 0 25px;
 }
-.pag-2 .proyectos-especialidades .sitios .corporativo .corporativo-text h2 {
+.pag-2 .proyectos-especialidades .sitios .corporativo .corporativo-text h3 {
   font-size: 1.5rem;
 }
 .pag-2 .proyectos-especialidades .sitios .portfolio {
@@ -556,7 +556,7 @@ footer p span {
   font-size: 3rem;
   padding: 0 25px;
 }
-.pag-2 .proyectos-especialidades .sitios .portfolio .portfolio-text h2 {
+.pag-2 .proyectos-especialidades .sitios .portfolio .portfolio-text h3 {
   font-size: 1.5rem;
 }
 .pag-2 .proyectos-especialidades .sitios .e-commerce {
@@ -599,7 +599,7 @@ footer p span {
   font-size: 3rem;
   padding: 0 25px;
 }
-.pag-2 .proyectos-especialidades .sitios .e-commerce .e-commerce-text h2 {
+.pag-2 .proyectos-especialidades .sitios .e-commerce .e-commerce-text h3 {
   font-size: 1.5rem;
 }
 .pag-2 .proyectos-especialidades .sitios .blog {
@@ -642,7 +642,7 @@ footer p span {
   font-size: 3rem;
   padding: 0 25px;
 }
-.pag-2 .proyectos-especialidades .sitios .blog .blog-text h2 {
+.pag-2 .proyectos-especialidades .sitios .blog .blog-text h3 {
   font-size: 1.5rem;
 }
 .pag-2 .proyectos-especialidades .sitios .dashboard {
@@ -685,7 +685,7 @@ footer p span {
   font-size: 3rem;
   padding: 0 25px;
 }
-.pag-2 .proyectos-especialidades .sitios .dashboard .dashboard-text h2 {
+.pag-2 .proyectos-especialidades .sitios .dashboard .dashboard-text h3 {
   font-size: 1.5rem;
 }
 
